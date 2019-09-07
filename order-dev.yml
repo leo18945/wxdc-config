@@ -44,3 +44,6 @@ logging:
             StatementCreatorUtils: TRACE
 env:
   dev
+com:
+  leotest:
+    api: whatthefuck
