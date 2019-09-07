@@ -17,12 +17,14 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
 #  jpa:
 #    properties:
 #      hibernate:
 #        jdbc:
 #          time_zone:
+  rabbitmq:
+    username: user
+    password: bitnami
 PRODUCT:
   ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
