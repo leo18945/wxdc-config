@@ -43,4 +43,4 @@ logging:
             JdbcTemplate: DEBUG
             StatementCreatorUtils: TRACE
 env:
-  dev
+  thisisdevenv
