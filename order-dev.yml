@@ -46,4 +46,4 @@ env:
   dev
 com:
   leotest:
-    api: whatthefuck
+    api: whatthefuck-so-bad
