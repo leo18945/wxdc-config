@@ -1,0 +1,46 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8011/eureka/, http://localhost:8012/eureka/, http://localhost:8013/eureka/
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wxdc?characterEncoding=utf-8&useSSL=false
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/wxdc?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: pass
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+#  jpa:
+#    properties:
+#      hibernate:
+#        jdbc:
+#          time_zone:
+PRODUCT:
+  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+      springframework:
+        jdbc:
+          core:
+            JdbcTemplate: DEBUG
+            StatementCreatorUtils: TRACE
+env:
+  dev
