@@ -46,7 +46,7 @@ env:
   dev
 com:
   leotest:
-    api: wxtz
+    api: wxauth
 wxapi:
   appid: qpqotqxoqcgj1pqi3x
   appsecret: asxl3i1i34j1xcnex1j1iuj413gkjxg3
