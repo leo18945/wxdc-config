@@ -46,7 +46,7 @@ env:
   dev
 com:
   leotest:
-    api: auth
+    api: auth2
 wxapi:
   appid: ddz
   appsecret: appsecret
