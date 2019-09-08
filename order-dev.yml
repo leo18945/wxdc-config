@@ -46,7 +46,7 @@ env:
   dev
 com:
   leotest:
-    api: updateorgan
+    api: searchuser
 wxapi:
   appid: ddz
   appsecret: appsecret
